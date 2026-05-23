@@ -117,7 +117,34 @@ app.post("/register", async(req,res)=>{
 
 });
 
+app.post("/login", async(req,res)=>{
 
+const { email, password } = req.body;
+
+const user = await User.findOne({
+
+email:email,
+password:password
+
+});
+
+if(user){
+
+res.json({
+success:true
+});
+
+}
+
+else{
+
+res.json({
+success:false
+});
+
+}
+
+});
 // =========================
 // GET USERS API
 // =========================
