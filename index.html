@@ -1162,6 +1162,15 @@ if(name === "" ||
 email === "" ||
 password === ""){
 
+    if(otpVerified === false){
+
+alert(
+"Please verify OTP first ❌"
+);
+
+return;
+
+}
 alert(
 "Please fill all fields ❌"
 );
@@ -1341,9 +1350,9 @@ alert(
 "OTP Verified ✅"
 );
 
-createAccount();
+otpVerified = true;
 
-}
+createAccount();
 
 else{
 
