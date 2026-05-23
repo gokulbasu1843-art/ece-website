@@ -1088,7 +1088,14 @@ background:#16a34a;">
 Verify OTP
 
 </button>
+<button
+onclick="createAccount()"
+style="
+margin-top:10px;">
 
+Create Account
+
+</button>
 </div>
 
 </div>
@@ -1299,15 +1306,17 @@ document.getElementById("noteBox")
 </script>
     
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+   
     <script>
 
 emailjs.init("9gGKHifZbvMCwAYEG");
 
 </script>
-    <script>let generatedOTP = "";
+    <script>
+       let generatedOTP = null;
 
 function sendOTP(){
-
+otpVerified = false;
 generatedOTP =
 Math.floor(100000 + Math.random() * 900000);
 
@@ -1348,6 +1357,8 @@ alert(
 }
     </script>
 
+
+
 <script>
 
 let otpVerified = false;
@@ -1355,9 +1366,30 @@ let otpVerified = false;
 function verifyOTP(){
 
 let enteredOTP =
-document.getElementById("otpInput").value;
+document.getElementById("otpInput")
+.value.trim();
 
-if(enteredOTP == generatedOTP){
+if(enteredOTP === ""){
+
+alert(
+"Please enter OTP ❌"
+);
+
+return;
+
+}
+
+if(generatedOTP === null){
+
+alert(
+"Please send OTP first ❌"
+);
+
+return;
+
+}
+
+if(enteredOTP === generatedOTP.toString()){
 
 otpVerified = true;
 
@@ -1365,7 +1397,7 @@ alert(
 "OTP Verified ✅"
 );
 
-createAccount();
+
 
 }
 
@@ -1380,6 +1412,9 @@ alert(
 }
 
 </script>
+
+
+    
     <script>
 
 async function loginAccount(){
@@ -1456,6 +1491,7 @@ alert(
 }
 
 </script>
+    
     <script>
     function openLogin(){
 
@@ -1472,6 +1508,7 @@ document.getElementById("loginBox")
 }
 
         </script>
+    
     <a href="https://wa.me/918453670810"
 class="whatsapp"
 target="_blank">
