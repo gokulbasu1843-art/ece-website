@@ -1162,7 +1162,15 @@ if(name === "" ||
 email === "" ||
 password === ""){
 
-    if(otpVerified === false){
+alert(
+"Please fill all fields ❌"
+);
+
+return;
+
+}
+
+if(otpVerified === false){
 
 alert(
 "Please verify OTP first ❌"
@@ -1170,6 +1178,7 @@ alert(
 
 return;
 
+}
 }
 alert(
 "Please fill all fields ❌"
@@ -1339,20 +1348,25 @@ alert(
     </script>
 
 <script>
-    function verifyOTP(){
+
+let otpVerified = false;
+
+function verifyOTP(){
 
 let enteredOTP =
 document.getElementById("otpInput").value;
 
 if(enteredOTP == generatedOTP){
 
+otpVerified = true;
+
 alert(
 "OTP Verified ✅"
 );
 
-otpVerified = true;
-
 createAccount();
+
+}
 
 else{
 
@@ -1362,7 +1376,9 @@ alert(
 
 }
 
-} 
+}
+
+</script>
     <a href="https://wa.me/918453670810"
 class="whatsapp"
 target="_blank">
