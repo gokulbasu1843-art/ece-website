@@ -748,6 +748,15 @@ class="btnn">
 
 Login
 </button>
+      <button
+onclick="forgotPassword()"
+style="
+margin-top:10px;
+background:#f59e0b;">
+
+Forgot Password
+
+</button>
   </a> 
 </nav>
 
@@ -1035,7 +1044,7 @@ Contact Us 📞
 
 <footer>
 
-© 2026 ECE Computer Center | Kalpani Bazar Dist.-Baksa (Assam)- 781315
+© 2026 ECE Computer Center | Kalpani Bazar 
 
 
 </footer>
@@ -1223,11 +1232,23 @@ await response.json();
 
 if(data.success){
 
+localStorage.setItem(
+"studentName",
+name
+);
+
+localStorage.setItem(
+"studentEmail",
+email
+);
+    
 alert(
 "Account Created Successfully ✅"
 );
 
 closeRegister();
+window.location.href =
+"/profile.html";
 
 document.getElementById("noteBox")
 .style.display = "flex";
@@ -1460,6 +1481,11 @@ await response.json();
 
 if(data.success){
 
+    localStorage.setItem(
+"studentEmail",
+email
+);
+    
 alert(
 "Login Successful ✅"
 );
