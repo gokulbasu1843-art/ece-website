@@ -165,8 +165,42 @@ success:false
 
 });
 // =========================
+
+app.post("/forgot-password",
+async(req,res)=>{
+
+const { email } = req.body;
+
+const user =
+await User.findOne({ email });
+
+if(user){
+
+res.json({
+
+message:
+`Your Password is: ${user.password}`
+
+});
+
+}
+
+else{
+
+res.json({
+
+message:
+"Email Not Found ❌"
+
+});
+
+}
+
+});
+
 // GET USERS API
 // =========================
+
 
 app.get("/users", async(req,res)=>{
 
