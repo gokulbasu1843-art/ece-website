@@ -1469,7 +1469,11 @@ const data =
 await response.json();
 
 if(data.success){
-
+    
+localStorage.setItem(
+"studentName",
+data.name
+);
     localStorage.setItem(
 "studentEmail",
 email
