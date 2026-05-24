@@ -149,15 +149,47 @@ localStorage.getItem("studentEmail");
   
 function openCF(){
 
+let id = prompt(
+"Enter Note ID"
+);
+
+if(id === "CF101"){
+
 window.location.href =
 "/notes/cf101.html";
 
 }
 
+else{
+
+alert(
+"Wrong Note ID ❌"
+);
+
+}
+
+}
+
 function openEX(){
+
+let id = prompt(
+"Enter Note ID"
+);
+
+if(id === "EX202"){
 
 window.location.href =
 "/notes/ex202.html";
+
+}
+
+else{
+
+alert(
+"Wrong Note ID ❌"
+);
+
+}
 
 }
 function logout(){
