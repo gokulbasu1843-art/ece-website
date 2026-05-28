@@ -1383,6 +1383,105 @@ target="_blank">
 💬
    
 </a>
+
+
+    <script>
+
+window.onload = function(){
+
+let user =
+localStorage.getItem(
+"studentEmail"
+);
+
+if(!user){
+
+document.getElementById("loginBox")
+.style.display = "flex";
+
+}
+
+}
+
+</script>
+
+
+<script type="module">
+
+import {
+initializeApp
+} from
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+import {
+getAuth,
+GoogleAuthProvider,
+signInWithPopup
+} from
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+const firebaseConfig = {
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyB4t_FAoBIu6pL1JiaI25NwcQ1ojFpf0-U",
+    authDomain: "ecekalpani-website.firebaseapp.com",
+    projectId: "ecekalpani-website",
+    storageBucket: "ecekalpani-website.firebasestorage.app",
+    messagingSenderId: "926367870038",
+    appId: "1:926367870038:web:918d4f0fbf2b2fbd915ff7"
+  };
+
+
+const app =
+initializeApp(firebaseConfig);
+
+const auth =
+getAuth(app);
+
+const provider =
+new GoogleAuthProvider();
+
+window.googleLogin =
+function(){
+
+signInWithPopup(auth, provider)
+
+.then((result)=>{
+
+const user =
+result.user;
+
+localStorage.setItem(
+"studentName",
+user.displayName
+);
+
+localStorage.setItem(
+"studentEmail",
+user.email
+);
+
+alert(
+"Google Login Successful ✅"
+);
+
+window.location.href =
+"/profile.html";
+
+})
+
+.catch((error)=>{
+
+alert(
+error.message
+);
+
+});
+
+}
+
+</script>
+    
 </body>
 
 </html>
