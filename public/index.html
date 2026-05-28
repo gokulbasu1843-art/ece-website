@@ -1717,6 +1717,24 @@ signInWithPopup(auth, provider)
 const user =
 result.user;
 
+    fetch("/google-login",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({
+
+name:user.displayName,
+
+email:user.email
+
+})
+
+});
+
 localStorage.setItem(
 "studentName",
 user.displayName
