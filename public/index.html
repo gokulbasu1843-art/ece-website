@@ -1350,6 +1350,209 @@ repeat(auto-fit,minmax(150px,1fr));
 }
 
 }
+
+/* =========================
+RESPONSIVE DESIGN
+========================= */
+
+/* Large Desktop */
+@media (min-width:1400px){
+
+.hero{
+padding:120px 10%;
+}
+
+.hero-text h1{
+font-size:70px;
+}
+
+.container{
+max-width:1400px;
+margin:auto;
+}
+
+}
+
+/* Laptop */
+@media (max-width:1200px){
+
+.hero-text h1{
+font-size:50px;
+}
+
+.course-grid,
+.notes-grid{
+gap:20px;
+}
+
+}
+
+/* Tablet */
+@media (max-width:992px){
+
+header{
+padding:15px 5%;
+}
+
+nav{
+display:none;
+}
+
+.menu-btn{
+display:block;
+}
+
+.hero{
+flex-direction:column;
+text-align:center;
+padding-top:100px;
+}
+
+.hero-text h1{
+font-size:42px;
+}
+
+.hero-text p{
+font-size:16px;
+}
+
+.hero-image{
+width:100%;
+}
+
+.hero-image img{
+width:100%;
+}
+
+.course-grid{
+grid-template-columns:
+repeat(2,1fr);
+}
+
+.notes-grid{
+grid-template-columns:
+repeat(2,1fr);
+}
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+.logo{
+font-size:20px;
+}
+
+.hero{
+padding:90px 5% 40px;
+}
+
+.hero-text h1{
+font-size:32px;
+}
+
+.hero-text p{
+font-size:14px;
+}
+
+.title{
+font-size:28px;
+}
+
+.subtitle{
+font-size:14px;
+}
+
+.course-grid,
+.notes-grid{
+grid-template-columns:1fr;
+}
+
+.course-card,
+.note-card{
+padding:20px;
+}
+
+.btn,
+.view-btn{
+width:100%;
+}
+
+.register-card,
+.login-content{
+width:95%;
+padding:25px;
+}
+
+.contact h2{
+font-size:30px;
+}
+
+}
+
+/* Small Mobile */
+@media (max-width:480px){
+
+.hero-text h1{
+font-size:26px;
+}
+
+.hero-text p{
+font-size:13px;
+}
+
+.logo{
+font-size:18px;
+}
+
+.icon,
+.note-icon{
+width:70px;
+height:70px;
+font-size:30px;
+}
+
+.course-card h3,
+.note-card h3{
+font-size:18px;
+}
+
+.register-card,
+.login-content{
+padding:20px;
+}
+
+.whatsapp{
+width:55px;
+height:55px;
+font-size:26px;
+right:15px;
+bottom:15px;
+}
+
+}
+
+/* Ultra Small Devices */
+@media (max-width:320px){
+
+.hero-text h1{
+font-size:22px;
+}
+
+.hero-text p{
+font-size:12px;
+}
+
+.title{
+font-size:22px;
+}
+
+.btn{
+font-size:12px;
+padding:12px;
+}
+
+}
     
 </style>
 
@@ -1361,27 +1564,13 @@ repeat(auto-fit,minmax(150px,1fr));
 
 <header>
 
-<div class="logo">
-
-ECE Computer <br>
-Kalpani Bazar
-</div>
+<div class="logo">ECE Computer Kalpani Bazar</div>
 
 <nav>
-
 <a href="#">Home</a>
-
-<a href="#courses">
-Courses
-</a>
-
-<a href="#notes">
-Notes
-</a>
-
-<a href="#contact">
-Contact
-</a>
+<a href="#courses">Courses</a>
+<a href="#notes">Notes</a>
+<a href="#contact">Contact</a>
  
 <button
 onclick="openLogin()"
