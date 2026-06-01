@@ -69,7 +69,7 @@ header{
 
 .logo{
 
-    font-size:30px;
+    font-size:25px;
 
     font-weight:800;
 
@@ -170,9 +170,9 @@ HERO
 
     justify-content:space-between;
 
-    padding:130px 8% 80px;
+    padding:10px 7% 40px;
 
-    gap:50px;
+    gap:30px;
 
     background:
     linear-gradient(
@@ -191,7 +191,7 @@ HERO
 
     display:inline-block;
 
-    padding:10px 20px;
+    padding:0px 20px;
 
     background:#dbeafe;
 
@@ -206,22 +206,23 @@ HERO
 
 .hero-text h1{
 
-    font-size:78px;
+    font-size:58px;
 
     line-height:1.1;
 
-    margin-bottom:25px;
+    margin-bottom:10px;
 
-    font-weight:800;
+    font-weight:700;
 
-    color:#0f172a;
+    color:#021949;
 }
+
 
 .hero-text p{
 
     font-size:18px;
 
-    color:#475569;
+    color:#162b47;
 
     line-height:1.8;
 
@@ -326,14 +327,14 @@ COURSES
     grid-template-columns:
     repeat(auto-fit,minmax(280px,1fr));
 
-    gap:30px;
+    gap:10px;
 }
 
 .course-card{
 
-    background:white;
+    background:rgb(255, 255, 255);
 
-    padding:40px 30px;
+    padding:5px 5px;
 
     border-radius:30px;
 
@@ -352,8 +353,8 @@ COURSES
 
 .icon{
 
-    width:90px;
-    height:90px;
+    width:80px;
+    height:80px;
 
     margin:auto;
 
@@ -368,19 +369,19 @@ COURSES
 
     font-size:40px;
 
-    margin-bottom:25px;
+    margin-bottom:20px;
 }
 
 .course-card h3{
 
-    margin-bottom:15px;
+    margin-bottom:10px;
 
-    font-size:24px;
+    font-size:20px;
 }
 
 .course-card p{
 
-    color:#64748b;
+    color:#282d55;
 
     line-height:1.8;
 }
@@ -399,7 +400,7 @@ NOTES
     display:grid;
 
     grid-template-columns:
-    repeat(auto-fit,minmax(280px,1fr));
+    repeat(auto-fit,minmax(180px,1fr));
 
     gap:30px;
 }
@@ -408,7 +409,7 @@ NOTES
 
     background:#f8fbff;
 
-    padding:40px 30px;
+    padding:10px 10px;
 
     border-radius:30px;
 
@@ -567,6 +568,8 @@ transform:scale(1.1);
 }
 
 
+
+
     
 /* =========================
 POPUP
@@ -661,9 +664,82 @@ POPUP
     cursor:pointer;
 }
 
-/* =========================
-MOBILE
-========================= */
+.register-card{
+
+background:#fff;
+padding:35px;
+border-radius:15px;
+max-width:400px;
+width:90%;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.1);
+
+}
+
+.register-card h2{
+
+margin-bottom:20px;
+color:#f97316;
+
+border-bottom:3px solid #f97316;
+display:inline-block;
+
+padding-bottom:5px;
+
+}
+
+.register-card input{
+
+width:100%;
+padding:14px;
+
+margin:10px 0;
+
+border:1px solid #ddd;
+
+border-radius:8px;
+
+font-size:15px;
+
+}
+
+.register-card button{
+
+width:100%;
+padding:14px;
+
+background:#f97316;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+margin-top:10px;
+
+}
+
+.register-card p{
+
+text-align:center;
+margin-top:15px;
+
+}
+
+.register-card a{
+
+color:#f97316;
+font-weight:bold;
+text-decoration:none;
+
+}
+
 
 @media(max-width:900px){
 
@@ -681,7 +757,7 @@ MOBILE
 
         text-align:center;
 
-        padding-top:130px;
+        padding-top:70px;
     }
 
     .hero-text h1{
@@ -701,13 +777,27 @@ MOBILE
 
     section{
 
-        padding:80px 5%;
+        padding:60px 5%;
     }
 
     .title{
 
         font-size:25px;
     }
+
+    /* =========================
+COURSES
+========================= */
+
+.course-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(150px,2fr));
+
+    gap:10px;
+}
 
 }
 
@@ -723,8 +813,8 @@ MOBILE
 
 <div class="logo">
 
-ECE Computer Center
-
+ECE Computer <br>
+Kalpani Bazar
 </div>
 
 <nav>
@@ -1042,9 +1132,14 @@ Contact Us 📞
 </footer>
 
 <!-- REGISTER POPUP -->
+<div class="login-box" id="registerBox">
+
+
 
 <div class="register-card">
-
+<span
+class="close-btn"
+onclick="closeRegister()">×</span>
 <h2>Register</h2>
 
 <input
@@ -1061,15 +1156,32 @@ placeholder="📧 Enter Email">
 type="password"
 id="studentPassword"
 placeholder="🔒 Create Password">
+<button onclick="sendOTP()">
+Send OTP
+</button>
 
-<button onclick="showOTP()">
+<input
+type="text"
+id="otpInput"
+placeholder="Enter OTP">
+
+<button
+onclick="verifyOTP()"
+style="background:#22c55e;">
+Verify OTP
+</button>
+
+<button onclick="createAccount()">
 Create Account
 </button>
 
 <p>
 Already have an account?
-<a href="#" onclick="openLogin()">
-Sign In
+<a href="#"
+onclick="
+closeRegister();
+openLogin();">
+Login
 </a>
 </p>
 
@@ -1132,8 +1244,20 @@ function openNote(noteId){
 
 currentNote = noteId;
 
+let user =
+localStorage.getItem("studentEmail");
+
+if(user){
+
+document.getElementById("noteBox")
+.style.display = "flex";
+
+}else{
+
 document.getElementById("registerBox")
 .style.display = "flex";
+
+}
 
 }
 
@@ -1628,7 +1752,7 @@ localStorage.getItem(
 
 if(!user){
 
-document.getElementById("loginBox")
+document.getElementById("registerBox")
 .style.display = "flex";
 
 }
