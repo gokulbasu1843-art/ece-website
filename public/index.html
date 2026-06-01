@@ -1043,133 +1043,37 @@ Contact Us 📞
 
 <!-- REGISTER POPUP -->
 
-<div class="login-box"
-id="registerBox">
+<div class="register-card">
 
-<div class="login-content">
+<h2>Register</h2>
 
-<span class="close-btn"
-onclick="closeRegister()">
-
-×
-
-</span>
-
-<h2>
-
-Create Student Account 🔐
-
-</h2>
-    
-
-
-<button
-onclick="googleLogin()"
-style="
-background:#ea4335;
-color:white;
-margin-bottom:15px;">
-
-🔵 Continue With Google
-
-</button>
-    
-  <div style="
-display:flex;
-align-items:center;
-margin:20px 0;
-">
-
-<hr style="flex:1;">
-
-<span style="
-padding:0 15px;
-font-weight:bold;
-color:#64748b;">
-
-OR
-
-</span>
-
-<hr style="flex:1;">
-
-</div>
-<input type="text"
+<input
+type="text"
 id="studentName"
-placeholder="Enter Name">
+placeholder="👤 Enter Name">
 
-<input type="email"
+<input
+type="email"
 id="studentEmail"
-placeholder="Enter Email">
+placeholder="📧 Enter Email">
 
-<input type="password"
+<input
+type="password"
 id="studentPassword"
-placeholder="Create Password">
-    
-<input type="text"
-id="otpInput"
-placeholder="Enter OTP">
-    
-<button onclick="sendOTP()">
-Send OTP
-</button>
+placeholder="🔒 Create Password">
 
-<button
-onclick="verifyOTP()"
-style="
-margin-top:10px;
-background:#16a34a;">
-
-Verify OTP
-
-</button>
-<button
-onclick="createAccount()"
-style="
-margin-top:10px;">
-
+<button onclick="showOTP()">
 Create Account
-
 </button>
-    <div style="
-display:flex;
-align-items:center;
-margin:20px 0;
-">
 
-<hr style="flex:1;">
-
-<span style="
-padding:0 15px;
-font-weight:bold;
-color:#64748b;">
-
-OR
-
-</span>
-
-<hr style="flex:1;">
-
-</div>
-<p style="
-text-align:center;
-margin-top:15px;
-color:#64748b;">
-
+<p>
 Already have an account?
-
+<a href="#" onclick="openLogin()">
+Sign In
+</a>
 </p>
 
-<button
-onclick="openLogin()"
-style="margin-top:10px;
-background:#0f172a;">
-
-Login
-
-</button>
 </div>
-
 </div>
 
     
