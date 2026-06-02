@@ -683,8 +683,9 @@ Enroll Now
 
 </section>
 <section id="courses">
+ <div class="course-list">
 <h2 class="paid-title">
-🎓 Our Paid Courses
+🎓 Our Paid Course
 </h2>
 
 <div class="course-list">
@@ -705,6 +706,99 @@ Enroll Now
 
 </div>
 </section>
+
+<section id="gallery">
+
+<h2 class="title">
+📸 Our Gallery
+</h2>
+
+<p class="subtitle">
+Moments from ECE Computer Center
+</p>
+
+<div class="gallery-grid">
+
+<div class="gallery-card">
+<img src="images/classroom.jpg" alt="Classroom">
+<h3>🏫 Classroom</h3>
+</div>
+
+<div class="gallery-card">
+<img src="images/students.jpg" alt="Students">
+<h3>👨‍🎓 Students</h3>
+</div>
+
+<div class="gallery-card">
+<img src="images/lab.jpg" alt="Computer Lab">
+<h3>💻 Computer Lab</h3>
+</div>
+
+<div class="gallery-card">
+<img src="images/certificate.jpg" alt="Certificate Distribution">
+<h3>🏆 Certificate Distribution</h3>
+</div>
+
+</div>
+</div>
+</section>
+ 
+<style>
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+margin-top:30px;
+
+}
+
+.gallery-card{
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:
+0 8px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.gallery-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.gallery-card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+.gallery-card h3{
+
+padding:15px;
+
+text-align:center;
+
+color:#1e3a8a;
+
+}
+</style>
+
  
 <!-- NOTES -->
 
