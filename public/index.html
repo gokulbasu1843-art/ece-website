@@ -3,2007 +3,1963 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ECE Computer Center Kalpani Bazar</title>
+    <title>ECE Computer Center Kalpani Bazar</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-<style>
-/* =========================
+    <style>
+        /* =========================
 PREMIUM ECE CSS
 ========================= */
-/* Logo */
-.logo{
-font-size:24px;
-}
+        /* Logo */
+        .logo {
+            font-size: 24px;
+        }
 
-/* Navigation */
-nav a{
-font-size:15px;
-}
+        /* Navigation */
+        nav a {
+            font-size: 15px;
+        }
 
-/* Hero Heading */
-.hero-text h1{
-font-size:48px;
-line-height:1.2;
-}
+        /* Hero Heading */
+        .hero-text h1 {
+            font-size: 48px;
+            line-height: 1.2;
+        }
 
-/* Hero Paragraph */
-.hero-text p{
-font-size:16px;
-}
+        /* Hero Paragraph */
+        .hero-text p {
+            font-size: 16px;
+        }
 
-/* Section Title */
-.title{
-font-size:36px;
-}
+        /* Section Title */
+        .title {
+            font-size: 30px;
+        }
 
-/* Subtitle */
-.subtitle{
-font-size:15px;
-}
+        /* Subtitle */
+        .subtitle {
+            font-size: 15px;
+        }
 
-/* Course Title */
-.course-card h3,
-.note-card h3{
-font-size:20px;
-}
+        /* Course Title */
+        .course-card h3,
+        .note-card h3 {
+            font-size: 20px;
+        }
 
-/* Course & Note Text */
-.course-card p,
-.note-card p{
-font-size:14px;
-}
+        /* Course & Note Text */
+        .course-card p,
+        .note-card p {
+            font-size: 14px;
+        }
 
-/* Contact */
-.contact h2{
-font-size:32px;
-}
+        /* Contact */
+        .contact h2 {
+            font-size: 30px;
+        }
 
-.contact p{
-font-size:15px;
-}
+        .contact p {
+            font-size: 15px;
+        }
 
-@media(max-width:768px){
+        @media(max-width:768px) {
 
-.logo{
-font-size:18px;
-}
+            .logo {
+                font-size: 18px;
+            }
 
-.hero-text h1{
-font-size:28px;
-}
+            .hero-text h1 {
+                font-size: 28px;
+            }
 
-.hero-text p{
-font-size:14px;
-}
+            .hero-text p {
+                font-size: 14px;
+            }
 
-.title{
-font-size:26px;
-}
+            .title {
+                font-size: 26px;
+            }
 
-.subtitle{
-font-size:13px;
-}
+            .subtitle {
+                font-size: 13px;
+            }
 
-.course-card h3,
-.note-card h3{
-font-size:16px;
-}
+            .course-card h3,
+            .note-card h3 {
+                font-size: 16px;
+            }
 
-.course-card p,
-.note-card p{
-font-size:12px;
-}
+            .course-card p,
+            .note-card p {
+                font-size: 12px;
+            }
 
-.contact h2{
-font-size:24px;
-}
+            .contact h2 {
+                font-size: 24px;
+            }
 
-.contact p{
-font-size:13px;
-}
+            .contact p {
+                font-size: 12px;
+            }
 
-}
+        }
 
-:root{
---primary:#0f4cdd;
---primary-dark:#0b3bb0;
---bg:#f1f5f9;
---card:#ffffff;
---text:#0f172a;
---muted:#64748b;
---border:#dbe4f0;
---shadow:0 12px 30px rgba(15,23,42,.10);
-}
+        :root {
+            --primary: #362e55;
+            --primary-dark: #0a38ac;
+            --bg: #e0dcff;
+            --card: #bcf7c5;
+            --text: #0f172a;
+            --muted: #2e302e;
+            --border: #4c00ff;
+            --shadow: 0 12px 30px rgba(145, 166, 214, 0.479);
+        }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Outfit',sans-serif;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
 
-html{
-scroll-behavior:smooth;
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-body{
-background:var(--bg);
-color:var(--text);
-overflow-x:hidden;
-line-height:1.6;
-}
+        body {
+            background: var(--bg);
+            color: var(--text);
+            overflow-x: hidden;
+            line-height: 1.;
+        }
 
-/* =========================
+        /* =========================
 HEADER
 ========================= */
 
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-padding:18px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:#ffffff;
-border-bottom:1px solid #e5e7eb;
-box-shadow:0 6px 25px rgba(0,0,0,.08);
-z-index:1000;
-}
+        header {
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #9d82ff8f;
+            border-bottom: 1px solid #ffffff00;
+            box-shadow: 0 6px 25px rgba(255, 255, 255, 0.08);
+            z-index: 1000;
+        }
 
-.logo{
+        .logo {
 
-font-weight:800;
-color:var(--primary);
-letter-spacing:.5px;
-}
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: .5px;
+        }
 
-nav{
-display:flex;
-align-items:center;
-gap:30px;
-}
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
 
-nav a{
-text-decoration:none;
-color:#334155;
-font-weight:600;
-transition:.3s;
-}
+        nav a {
+            text-decoration: none;
+            color: #0e0d2e;
+            font-weight: 600;
+            border: #020617;
+            -webkit-text-stroke: #002efd;
+            transition: .3s;
+        }
 
-nav a:hover{
-color:var(--primary);
-}
+        nav a:hover {
+            color: var(--primary);
+        }
 
-/* =========================
+        /* =========================
 BUTTONS
 ========================= */
 
-.btn,
-.view-btn{
-background:var(--primary);
-color:#fff;
-border:none;
-padding:14px 28px;
-border-radius:14px;
-cursor:pointer;
+        .btn,
+        .view-btn {
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 14px;
+            cursor: pointer;
+            font-weight: 700;
+            letter-spacing: .3px;
+            transition: .3s;
+            box-shadow: 0 10px 25px rgba(15, 76, 221, .25);
+        }
 
-font-weight:700;
-letter-spacing:.3px;
-transition:.3s;
-box-shadow:0 10px 25px rgba(15,76,221,.25);
-}
+        .btn:hover,
+        .view-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-4px);
+        }
 
-.btn:hover,
-.view-btn:hover{
-background:var(--primary-dark);
-transform:translateY(-4px);
-}
-
-/* =========================
+        /* =========================
 NOTICE BAR
 ========================= */
 
-.notice-bar{
-margin-top:75px;
-width:100%;
-background:#fff;
-overflow:hidden;
-padding:12px 0;
-border-top:1px solid var(--border);
-border-bottom:1px solid var(--border);
-}
+        .notice-bar {
+            margin-top: 65px;
+            width: 100%;
+            background: #ffffff94;
+            overflow: hidden;
+            padding: 7px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
 
-.notice-text{
-display:inline-block;
-white-space:nowrap;
-padding-left:100%;
+        .notice-text {
+            display: inline-block;
+            white-space: nowrap;
+            padding-left: 100%;
 
-font-weight:700;
-color:#dc2626;
-animation:scrollNotice 18s linear infinite;
-}
+            font-weight: 700;
+            color: #dc2626;
+            animation: scrollNotice 20s linear infinite;
+        }
 
 
 
-.notice-bar:hover .notice-text{
-animation-play-state:paused;
-}
+        .notice-bar:hover .notice-text {
+            animation-play-state: paused;
+        }
 
-@keyframes scrollNotice{
-0%{
-transform:translateX(0);
-}
-100%{
-transform:translateX(-100%);
-}
-}
+        @keyframes scrollNotice {
+            0% {
+                transform: translateX(0);
+            }
 
-/* =========================
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* =========================
 HERO
 ========================= */
-.mobile-menu{
-position:fixed;
-top:80px;
-right:-100%;
-width:260px;
-height:calc(100vh - 80px);
-background:#ffffff;
-display:flex;
-flex-direction:column;
-transition:0.4s ease;
-box-shadow:-5px 0 20px rgba(0,0,0,0.1);
-z-index:9999;
-padding-top:10px;
-}
+        .mobile-menu {
+            position: fixed;
+            top: 80px;
+            right: -100%;
+            width: 200px;
+            height: calc(100vh - 80px);
+            background: #fffffff3;
+            display: flex;
+            flex-direction: column;
+            transition: 0.4s ease;
+            box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+            padding-top: 1px;
+        }
 
-.mobile-menu.show{
-right:0;
-}
+        .mobile-menu.show {
+            right: 0;
+        }
 
-.mobile-menu a{
-text-decoration:none;
-padding:15px 25px;
-color:#1e293b;
-font-weight:600;
-border-bottom:1px solid #e5e7eb;
-}
+        .mobile-menu a {
+            text-decoration: none;
+            padding: 15px 25px;
+            color: #1e293b;
+            font-weight: 600;
+            border-bottom: 1px solid #381368;
+        }
 
-.mobile-menu a:hover{
-background:#f8fafc;
-color:#2563eb;
-}
+        .mobile-menu a:hover {
+            background: #f8fafc;
+            color: #2563eb;
+        }
 
-/* Desktop */
-.menu-btn{
-display:none;
-}
+        /* Desktop */
+        .menu-btn {
+            display: none;
+        }
 
-/* Mobile */
-@media(max-width:768px){
+        /* Mobile */
+        @media(max-width:768px) {
 
-nav{
-display:none;
-}
+            nav {
+                display: none;
+            }
 
-.menu-btn{
-display:flex;
-justify-content:center;
-align-items:center;
-width:45px;
-height:45px;
+            .menu-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 45px;
+                height: 45px;
 
-background:#fff;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
-cursor:pointer;
-}
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                cursor: pointer;
+            }
 
-}
+        }
 
-.hero{
-min-height:calc(100vh - 90px);
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:120px 8% 60px;
-gap:50px;
-}
+        .hero {
+            min-height: calc(100vh - 90px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 120px 8% 60px;
+            gap: 50px;
+        }
 
-.hero-text{
-flex:1;
-}
+        .hero-text {
+            flex: 1;
+        }
 
-.hero-text h1{
+        .hero-text h1 {
 
-font-weight:800;
-line-height:1.1;
-margin-bottom:20px;
-color:#0f172a;
-}
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 15px;
+            color: #0f172a;
+        }
 
-.hero-text p{
+        .hero-text p {
 
-line-height:1.9;
-color:var(--muted);
-margin-bottom:30px;
-}
+            line-height: 1.9;
+            color: var(--muted);
+            margin-bottom: 25px;
+        }
 
-.hero-image{
-flex:1;
-}
+        .hero-image {
+            flex: 1;
+        }
 
-.hero-image img{
-width:100%;
-border-radius:30px;
-box-shadow:0 20px 50px rgba(0,0,0,.12);
-transition:.4s;
-}
+        .hero-image img {
+            width: 100%;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, .12);
+            transition: .4s;
+        }
 
-.hero-image img:hover{
-transform:scale(1.02);
-}
+        .hero-image img:hover {
+            transform: scale(1.02);
+        }
 
-/* =========================
+        /* =========================
 SECTIONS
 ========================= */
 
-section{
-padding:90px 8%;
-}
+        section {
+            padding: 50px 5%;
+        }
 
-.title{
+        .title {
 
-font-weight:800;
-text-align:center;
-margin-bottom:12px;
-}
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 7px;
+        }
 
-.subtitle{
-text-align:center;
-font-size:16px;
-color:var(--muted);
-margin-bottom:50px;
-}
+        .subtitle {
+            text-align: center;
+            font-size: 10px;
+            color: var(--muted);
+            margin-bottom: 50px;
+        }
 
-/* =========================
+        /* =========================
 COURSES
 ========================= */
 
-.course-list{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:18px;
-}
+        .course-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
 
-.course-list h3{
-background:#fff;
-padding:16px 24px;
-border-radius:15px;
-box-shadow:0 8px 20px rgba(0,0,0,.06);
-font-size:17px;
-font-weight:700;
-cursor:pointer;
-transition:.3s;
-}
+        .course-list h3 {
+            background: #fff;
+            padding: 5px 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .06);
+            font-size: 17px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: .3s;
+        }
 
-.course-list h3:hover{
-background:var(--primary);
-color:#fff;
-transform:translateY(-5px);
-}
+        .course-list h3:hover {
+            background: var(--primary);
+            color: #fff;
+            transform: translateY(-5px);
+        }
 
-/* =========================
+        /* =========================
 GALLERY
 ========================= */
 
-.gallery-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-}
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
 
-.gallery-card{
-background:#fff;
-border-radius:22px;
-overflow:hidden;
-box-shadow:var(--shadow);
-transition:.3s;
-}
+        .gallery-card {
+            background: #fff;
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: .3s;
+        }
 
-.gallery-card:hover{
-transform:translateY(-8px);
-}
+        .gallery-card:hover {
+            transform: translateY(-8px);
+        }
 
-.gallery-card img{
-width:100%;
-height:220px;
-object-fit:cover;
-transition:.4s;
-}
+        .gallery-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: .4s;
+        }
 
-.gallery-card:hover img{
-transform:scale(1.08);
-}
+        .gallery-card:hover img {
+            transform: scale(1.08);
+        }
 
-.gallery-card h3{
-padding:15px;
-text-align:center;
-}
+        .gallery-card h3 {
+            padding: 15px;
+            text-align: center;
+        }
 
-/* =========================
+        /* =========================
 ADMISSION PROCESS
 ========================= */
 
-.process-box{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-}
+        .process-box {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
 
-.step{
-background:#fff;
-padding:25px;
-border-radius:20px;
-text-align:center;
-box-shadow:var(--shadow);
-transition:.3s;
-}
+        .step {
+            background: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: .3s;
+        }
 
-.step:hover{
-transform:translateY(-8px);
-}
+        .step:hover {
+            transform: translateY(-8px);
+        }
 
-.step span{
-width:60px;
-height:60px;
-margin:auto auto 15px;
-display:flex;
-justify-content:center;
-align-items:center;
-background:var(--primary);
-color:#fff;
-border-radius:50%;
-font-size:24px;
-font-weight:800;
-}
+        .step span {
+            width: 60px;
+            height: 60px;
+            margin: auto auto 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--primary);
+            color: #fff;
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: 800;
+        }
 
-.step h3{
-margin-bottom:10px;
-color:#1e3a8a;
-}
+        .step h3 {
+            margin-bottom: 10px;
+            color: #1e3a8a;
+        }
 
-.step p{
-color:var(--muted);
-}
+        .step p {
+            color: var(--muted);
+        }
 
-/* =========================
+        /* =========================
 DOCUMENTS
 ========================= */
 
-.documents-box{
-max-width:700px;
-margin:auto;
-}
+        .documents-box {
+            max-width: 700px;
+            margin: auto;
+        }
 
-.document-item{
-background:#fff;
-padding:18px 20px;
-margin-bottom:15px;
-border-left:5px solid var(--primary);
-border-radius:12px;
-font-size:18px;
-font-weight:600;
-box-shadow:var(--shadow);
-transition:.3s;
-}
+        .document-item {
+            background: #fff;
+            padding: 18px 20px;
+            margin-bottom: 15px;
+            display: list-item;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            transition: .3s;
+        }
 
-.document-item:hover{
-transform:translateX(8px);
-}
+        .document-item:hover {
+            transform: translateX(8px);
+        }
 
-/* =========================
+        /* =========================
 NOTES
 ========================= */
 
-.notes{
-background:#fff;
-}
+        .notes {
+            background: #fff;
+        }
 
-.notes-grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
-}
+        .notes-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
 
-.note-card{
-background:#fff;
-padding:25px;
-border-radius:22px;
-border:1px solid #e5e7eb;
-box-shadow:0 10px 25px rgba(0,0,0,.06);
-text-align:center;
-transition:.3s;
-}
+        .note-card {
+            background: #fff;
+            padding: 10px;
+            border-radius: 22px;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+            transition: .3s;
+        }
 
-.note-card:hover{
-transform:translateY(-10px);
-}
+        .note-card:hover {
+            transform: translateY(-10px);
+        }
 
-.note-icon{
-width:80px;
-height:80px;
-margin:auto;
-border-radius:20px;
-background:#dbeafe;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:35px;
-margin-bottom:15px;
-}
+        .note-icon {
+            width: 80px;
+            height: 80px;
+            margin: auto;
+            border-radius: 20px;
+            background: #dbeafe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
 
-/* =========================
+        /* =========================
 LOCATION
 ========================= */
 
-.location-box{
-max-width:700px;
-margin:auto;
-padding:30px;
-background:#fff;
-border-radius:20px;
-box-shadow:var(--shadow);
-}
+        .location-box {
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
 
-.location-box p{
-margin:15px 0;
-line-height:1.8;
-}
+        .location-box p {
+            margin: 15px 0;
+            line-height: 1.8;
+        }
 
-/* =========================
+        /* =========================
 CONTACT
 ========================= */
 
-.contact{
-background:#0f172a;
-color:#fff;
-text-align:center;
-padding:80px 20px;
-}
+        .contact {
+            background: #0f172a;
+            color: #fff;
+            text-align: center;
+            padding: 8px 2px;
+        }
 
-.contact h2{
-font-size:42px;
-margin-bottom:20px;
-}
+        .contact h2 {
+            font-size: 42px;
+            margin-bottom: 5px;
+        }
 
-.contact a{
-display:inline-block;
-padding:10px 15px;
-margin:6px;
-background:rgba(255,255,255,.08);
-border-radius:10px;
-color:#fff;
-font-weight:700;
-text-decoration:none;
-transition:.3s;
-}
+        .contact a {
+            display: inline-table;
+            padding: 5px 10px;
+            margin: 6px;
+            background: rgba(255, 255, 255, .08);
+            border-radius: 10px;
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            transition: .3s;
+            text-align: center;
+        }
 
-.contact a:hover{
-background:var(--primary);
-}
+        .contact a:hover {
+            background: var(--primary);
+        }
 
-/* =========================
+        .p {
+            display: flex;
+
+        }
+
+        /* =========================
 FOOTER
 ========================= */
 
-footer{
-background:#020617;
-color:#cbd5e1;
-padding:25px;
-text-align:center;
-font-size:15px;
-letter-spacing:.5px;
-}
+        footer {
+            background: #020617;
+            color: #cbd5e1;
+            padding: 20px;
+            text-align: center;
+            font-size: 15px;
+            letter-spacing: .5px;
+        }
 
-/* =========================
+        /* =========================
 LOGIN / REGISTER
 ========================= */
 
-.login-content,
-.register-card{
-background:#fff;
-padding:35px;
-border-radius:20px;
-box-shadow:0 20px 50px rgba(0,0,0,.15);
-}
+        .login-content,
+        .register-card {
+            background: #fff;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, .15);
+        }
 
-.login-content input,
-.register-card input{
-width:100%;
-padding:14px;
-margin:10px 0;
-border:1px solid #cbd5e1;
-border-radius:10px;
-outline:none;
-}
+        .login-content input,
+        .register-card input {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            outline: none;
+        }
 
-.close-btn{
-position:absolute;
-right:15px;
-top:10px;
-font-size:28px;
-cursor:pointer;
-}
+        .close-btn {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            font-size: 28px;
+            cursor: pointer;
+        }
 
-/* =========================
+        /* =========================
 WHATSAPP
 ========================= */
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-width:65px;
-height:65px;
-background:#25d366;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-color:#fff;
-text-decoration:none;
-box-shadow:0 10px 25px rgba(0,0,0,.2);
-transition:.3s;
-z-index:999;
-}
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 65px;
+            height: 65px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: #fff;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
+            transition: .3s;
+            z-index: 999;
+        }
 
-.whatsapp:hover{
-transform:scale(1.1);
-}
+        .whatsapp:hover {
+            transform: scale(1.1);
+        }
 
-/* =========================
+        /* =========================
 MOBILE RESPONSIVE
 ========================= */
 
-@media(max-width:768px){
+        @media(max-width:768px) {
 
-.logo{
-font-size:22px;
-}
+            .logo {
+                font-size: 20px;
+            }
 
-nav{
-display:none;
-}
+            nav {
+                display: none;
+            }
 
-.menu-btn{
-display:block;
-font-size:30px;
-}
+            .menu-btn {
+                display: block;
+                font-size: 30px;
+            }
 
-.hero{
-flex-direction:column;
-text-align:center;
-padding-top:110px;
-gap:30px;
-}
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 40px;
+                gap: 20px;
+            }
 
-.hero-text h1{
-font-size:34px;
-}
+            .hero-text h1 {
+                font-size: 25px;
+            }
 
-.hero-text p{
-font-size:15px;
-}
+            .hero-text p {
+                font-size: 10px;
+            }
 
-.hero-image img{
-height:230px;
-object-fit:cover;
-}
+            .hero-image img {
+                height: 200px;
+                object-fit: cover;
+               
+            }
 
-.title{
-font-size:30px;
-}
+            .title {
+                font-size: 25px;
+            }
 
-.gallery-grid,
-.notes-grid,
-.process-box{
-grid-template-columns:repeat(2,1fr);
-gap:12px;
-}
+            .gallery-grid,
+            .notes-grid,
+            .process-box {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
 
-.note-card,
-.step{
-padding:15px;
-}
+            .note-card,
+            .step {
+                padding: 7px;
+            }
 
-.btn,
-.view-btn{
-width:100%;
-}
+            .btn,
+            .view-btn {
+                width: 80%;
+            }
 
-.contact{
-padding:60px 20px;
-}
-}
-/* =========================
+            .contact {
+                padding: 6px 2px;
+            }
+        }
+
+        /* =========================
 PREMIUM LOGIN & REGISTER
 ========================= */
 
-.login-box{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(15,23,42,.75);
-backdrop-filter:blur(8px);
-display:none;
-justify-content:center;
-align-items:center;
-z-index:9999;
-padding:20px;
-}
+        .login-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, .75);
+            backdrop-filter: blur(8px);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            padding: 20px;
+        }
 
-.login-content,
-.register-card{
-background:#ffffff;
-width:100%;
-max-width:430px;
-padding:35px;
-border-radius:24px;
-position:relative;
-box-shadow:0 25px 60px rgba(0,0,0,.20);
-animation:popupShow .3s ease;
-}
+        .login-content,
+        .register-card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 430px;
+            padding: 35px;
+            border-radius: 24px;
+            position: relative;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, .20);
+            animation: popupShow .3s ease;
+        }
 
-@keyframes popupShow{
-from{
-opacity:0;
-transform:translateY(20px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
+        @keyframes popupShow {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
 
-.login-content h2,
-.register-card h2{
-text-align:center;
-font-size:28px;
-font-weight:800;
-margin-bottom:25px;
-color:#0f172a;
-}
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-.login-content input,
-.register-card input{
-width:100%;
-padding:15px;
-margin-bottom:12px;
-border:1px solid #dbe4f0;
-border-radius:12px;
-font-size:15px;
-background:#f8fafc;
-transition:.3s;
-}
+        .login-content h2,
+        .register-card h2 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 25px;
+            color: #0f172a;
+        }
 
-.login-content input:focus,
-.register-card input:focus{
-border-color:#0f4cdd;
-background:#fff;
-outline:none;
-box-shadow:0 0 0 4px rgba(15,76,221,.10);
-}
+        .login-content input,
+        .register-card input {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 12px;
+            border: 1px solid #dbe4f0;
+            border-radius: 12px;
+            font-size: 15px;
+            background: #f8fafc;
+            transition: .3s;
+        }
 
-.login-content button,
-.register-card button{
-width:100%;
-padding:15px;
-border:none;
-border-radius:12px;
-background:#0f4cdd;
-color:#fff;
-font-size:15px;
-font-weight:700;
-cursor:pointer;
-margin-top:8px;
-transition:.3s;
-}
+        .login-content input:focus,
+        .register-card input:focus {
+            border-color: #0f4cdd;
+            background: #fff;
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(15, 76, 221, .10);
+        }
 
-.login-content button:hover,
-.register-card button:hover{
-background:#0b3bb0;
-}
+        .login-content button,
+        .register-card button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            background: #0f4cdd;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: .3s;
+        }
 
-.close-btn{
-position:absolute;
-top:15px;
-right:18px;
-font-size:30px;
-font-weight:700;
-cursor:pointer;
-color:#64748b;
-transition:.3s;
-}
+        .login-content button:hover,
+        .register-card button:hover {
+            background: #0b3bb0;
+        }
 
-.close-btn:hover{
-color:#ef4444;
-transform:rotate(90deg);
-}
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 18px;
+            font-size: 30px;
+            font-weight: 700;
+            cursor: pointer;
+            color: #64748b;
+            transition: .3s;
+        }
 
-.register-card p{
-text-align:center;
-margin-top:18px;
-font-size:14px;
-color:#64748b;
-}
+        .close-btn:hover {
+            color: #ef4444;
+            transform: rotate(90deg);
+        }
 
-.register-card p a{
-color:#0f4cdd;
-font-weight:700;
-text-decoration:none;
-}
+        .register-card p {
+            text-align: center;
+            margin-top: 18px;
+            font-size: 14px;
+            color: #64748b;
+        }
 
-.register-card p a:hover{
-text-decoration:underline;
-}
+        .register-card p a {
+            color: #0f4cdd;
+            font-weight: 700;
+            text-decoration: none;
+        }
 
-/* Google Button */
+        .register-card p a:hover {
+            text-decoration: underline;
+        }
 
-.google-btn{
-background:#ea4335 !important;
-}
+        /* Google Button */
 
-.google-btn:hover{
-background:#d93025 !important;
-}
+        .google-btn {
+            background: #ea4335 !important;
+        }
 
-/* Forgot Password */
+        .google-btn:hover {
+            background: #d93025 !important;
+        }
 
-.forgot-btn{
-background:#f59e0b !important;
-}
+        /* Forgot Password */
 
-.forgot-btn:hover{
-background:#d97706 !important;
-}
+        .forgot-btn {
+            background: #f59e0b !important;
+        }
 
-/* Verify OTP */
+        .forgot-btn:hover {
+            background: #d97706 !important;
+        }
 
-.verify-btn{
-background:#22c55e !important;
-}
+        /* Verify OTP */
 
-.verify-btn:hover{
-background:#16a34a !important;
-}
+        .verify-btn {
+            background: #22c55e !important;
+        }
 
-@media(max-width:768px){
+        .verify-btn:hover {
+            background: #16a34a !important;
+        }
 
-.login-content,
-.register-card{
-padding:25px;
-border-radius:20px;
-}
+        @media(max-width:768px) {
 
-.login-content h2,
-.register-card h2{
-font-size:24px;
-}
+            .login-content,
+            .register-card {
+                padding: 25px;
+                border-radius: 20px;
+            }
 
-}
-</style>
+            .login-content h2,
+            .register-card h2 {
+                font-size: 24px;
+            }
+
+        }
+    </style>
 
 </head>
 
 <body>
 
-<!-- HEADER -->
+    <!-- HEADER -->
 
-<header>
+    <header>
 
-<div class="logo">
-ECE Kalpani Bazar
-</div>
+        <div class="logo">
+            ECE Kalpani Bazar
+        </div>
 
-<nav>
+        <nav>
 
-<a href="#">Home</a>
+            <a href="#">Home</a>
 
-<a href="#courses">Courses</a>
+            <a href="#courses">Courses</a>
 
-<a href="#notes">Notes</a>
+            <a href="#notes">Notes</a>
 
-<a href="#contact">Contact</a>
+            <a href="#contact">Contact</a>
 
-<button onclick="openLogin()" class="btn">
-Login
-</button>
+            <button onclick="openLogin()" class="btn">
+                Login
+            </button>
 
-</nav>
+        </nav>
 
-<div class="menu-btn"
-onclick="toggleMenu()">
-☰
-</div>
+        <div class="menu-btn" onclick="toggleMenu()">
+            ☰
+        </div>
 
-</header>
+    </header>
 
-<!-- MOBILE MENU -->
+    <!-- MOBILE MENU -->
 
-<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu" id="mobileMenu">
 
-<a href="#" onclick="closeMenu()">
-🏠 Home
-</a>
+        <a href="#" onclick="closeMenu()">
+            🏠 Home
+        </a>
 
-<a href="#courses" onclick="closeMenu()">
-💻 Courses
-</a>
+        <a href="#courses" onclick="closeMenu()">
+            💻 Courses
+        </a>
 
-<a href="#notes" onclick="closeMenu()">
-📚 Notes
-</a>
+        <a href="#notes" onclick="closeMenu()">
+            📚 Notes
+        </a>
 
-<a href="#contact" onclick="closeMenu()">
-📞 Contact
-</a>
+        <a href="#contact" onclick="closeMenu()">
+            📞 Contact
+        </a>
 
-<a href="#" onclick="closeMenu();openLogin();">
-🔐 Login
-</a>
+        <a href="#" onclick="closeMenu();openLogin();">
+            🔐 Login
+        </a>
 
-</div>
+    </div>
 
-<!-- NOTICE BAR -->
+    <!-- NOTICE BAR -->
 
-<div class="notice-bar">
+    <div class="notice-bar">
 
-<div class="notice-text">
+        <div class="notice-text">
 
-🎓 Admissions Open for 2026 Session | PGDCA • ADCA • DCA • Tally Prime + GST • Excel | 📞 +91 8453670810
+            🎓 Admissions Open for 2026 Session | PGDCA • ADCA • DCA • Tally Prime + GST • Excel | 📞 +91 8453670810
 
-</div>
+        </div>
 
-</div> <!-- HERO -->
+    </div> <!-- HERO -->
 
-<section class="hero">
+    <section class="hero">
 
-<div class="hero-text">
+        <div class="hero-text">
 
-<span>
-🎓
-</span>
+            <span>
+                🎓
+            </span>
 
-<h1>
-Learn Computer Skills
-For Your Bright Future 💻
-</h1>
+            <h1>
+                Learn Computer Skills
+                For Your Bright Future 💻
+            </h1>
 
-<p>
-PGDCA | ADCA | DCA |
-Advanced Excel | Tally |
-Professional Computer Training
-</p>
+            <p>
+                PGDCA | ADCA | DCA |
+                Advanced Excel | Tally |
+                Professional Computer Training
+            </p>
 
-<button class="btn"
-onclick="document.getElementById('contact').scrollIntoView();">
-Enroll Now
-</button>
+            <button class="btn" onclick="document.getElementById('contact').scrollIntoView();">
+                Enroll Now
+            </button>
 
-</div>
+        </div>
 
-<div class="hero-image">
+        <div class="hero-image">
 
-<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop">
 
-</div>
+        </div>
+        <div class="hero-image">
 
-</section>
+            <img src="posterece.jpeg">
 
-<!-- COURSES -->
+        </div>
+    </section>
 
-<section id="courses">
+    <!-- COURSES -->
 
-<h2 class="paid-title">
-🎓 Our Paid Course
-</h2>
+    <section id="courses" style="background-color: #9883f7;">
 
-<div class="course-list">
+        <h2 class="paid-title" style="text-align: center; padding: 10px;">
+            🎓 Our Paid Course
+        </h2>
 
-<h3>💻 PGDCA</h3>
-<h3>🖥️ ADCA</h3>
-<h3>📚 DCA</h3>
-<h3>CCA</h3>
-<h3>MS Office</h3>
-<h3>Adobe Photoshop</h3>
-<h3>🧾 Tally - GST</h3>
-<h3>Coding</h3>
-<h3>🌐 Web Designing</h3>
-<h3>🛒 E-Commerce</h3>
+        <div class="course-list">
 
-</div>
+            <h3>💻 PGDCA</h3> <h3>🖥️ ADCA</h3> <h3>📚 DCA</h3> <h3>CCA</h3> <h3>MS Office</h3> <h3>Adobe Photoshop</h3> <h3>🧾 Tally - GST<h3> <h3>Coding</h3> <h3>🌐 Web Designing</h3> <h3>🛒 E-Commerce</h3>
+        </div>
 
-</section>
+    </section>
 
-<!-- GALLERY -->
+    <!-- GALLERY -->
 
-<section id="gallery">
+    <section id="gallery">
 
-<h2 class="title">
-📸 Our Gallery
-</h2>
+        <h2 class="title">
+            📸 Our Gallery
+        </h2>
 
-<p class="subtitle">
-Moments from ECE Computer Center
-</p>
+        <p class="subtitle">
+            Moments from ECE Computer Center
+        </p>
 
-<div class="gallery-grid">
+        <div class="gallery-grid">
 
-<div class="gallery-card">
-<img src="images/classroom.jpg" alt="Classroom">
-<h3>🏫 Classroom</h3>
-</div>
+            <div class="gallery-card">
+                <img src="images/classroom.jpg" alt="Classroom">
+                <h3>🏫 Classroom</h3>
+            </div>
 
-<div class="gallery-card">
-<img src="images/students.jpg" alt="Students">
-<h3>👨‍🎓 Students</h3>
-</div>
+            <div class="gallery-card">
+                <img src="images/students.jpg" alt="Students">
+                <h3>👨‍🎓 Students</h3>
+            </div>
 
-<div class="gallery-card">
-<img src="images/lab.jpg" alt="Computer Lab">
-<h3>💻 Computer Lab</h3>
-</div>
+            <div class="gallery-card">
+                <img src="images/lab.jpg" alt="Computer Lab">
+                <h3>💻 Computer Lab</h3>
+            </div>
 
-<div class="gallery-card">
-<img src="images/certificate.jpg" alt="Certificate Distribution">
-<h3>🏆 Certificate Distribution</h3>
-</div>
+            <div class="gallery-card">
+                <img src="images/certificate.jpg" alt="Certificate Distribution">
+                <h3>🏆 Certificate Distribution</h3>
+            </div>
 
-</div>
+        </div>
 
-</section>
+    </section>
 
-<!-- ADMISSION PROCESS -->
+    <!-- ADMISSION PROCESS -->
 
-<section class="admission-process">
+    <section class="admission-process">
 
-<h2 class="title">
-🎓 Admission Process
-</h2>
+        <h2 class="title">
+            🎓 Admission Process
+        </h2>
 
-<div class="process-box">
+        <div class="process-box">
 
-<div class="step">
-<span>1</span>
-<h3>Visit Institute</h3>
-<p>Visit ECE Computer Center and get course information.</p>
-</div>
+            <div class="step">
+                <span>1</span>
+                <h3>Visit Institute</h3>
+                <p>Visit ECE Computer Center and get course information.</p>
+            </div>
 
-<div class="step">
-<span>2</span>
-<h3>Select Course</h3>
-<p>Choose the course that matches your career goals.</p>
-</div>
+            <div class="step">
+                <span>2</span>
+                <h3>Select Course</h3>
+                <p>Choose the course that matches your career goals.</p>
+            </div>
 
-<div class="step">
-<span>3</span>
-<h3>Complete Registration</h3>
-<p>Submit required documents and complete admission.</p>
-</div>
+            <div class="step">
+                <span>3</span>
+                <h3>Complete Registration</h3>
+                <p>Submit required documents and complete admission.</p>
+            </div>
 
-<div class="step">
-<span>4</span>
-<h3>Start Learning</h3>
-<p>Attend classes and build your computer skills.</p>
-</div>
+            <div class="step">
+                <span>4</span>
+                <h3>Start Learning</h3>
+                <p>Attend classes and build your computer skills.</p>
+            </div>
 
-</div>
+        </div>
 
-</section>
+    </section>
 
-<!-- REQUIRED DOCUMENTS -->
+    <!-- REQUIRED DOCUMENTS -->
 
-<section class="documents-section">
+    <section class="documents-section">
 
-<h2 class="title">
-📋 Required Documents
-</h2>
+        <h2 class="title">
+            📋 Required Documents
+        </h2>
 
-<div class="documents-box">
+        <div class="documents-box">
 
-<div class="document-item">
-📄 Aadhaar Card
-</div>
+            <div class="document-item">
+                📄 Aadhaar Card
+            </div>
 
-<div class="document-item">
-📷 Passport Size Photo
-</div>
+            <div class="document-item">
+                📷 Passport Size Photo
+            </div>
 
-<div class="document-item">
-📑 Educational Certificate
-</div>
+            <div class="document-item">
+                📑 Educational Certificate
+            </div>
 
-</div>
+        </div>
 
-</section>
+    </section>
 
-<!-- NOTES -->
+    <!-- NOTES -->
 
-<section class="notes" id="notes">
+    <section class="notes" id="notes">
 
-<h2 class="title">
-Notes 📚
-</h2>
+        <h2 class="title">
+            Notes 📚
+        </h2>
 
-<p class="subtitle">
-Create Account First To Access Notes
-</p>
+        <p class="subtitle">
+            Create Account First To Access Notes
+        </p>
 
-<div class="notes-grid">
+        <div class="notes-grid">
 
-<div class="note-card">
+            <div class="note-card">
 
-<div class="note-icon">
-📘
-</div>
+                <div class="note-icon">
+                    📘
+                </div>
 
-<h3>
-Computer Fundamentals
-</h3>
+                <h3>
+                    Computer Fundamentals
+                </h3>
 
-<p>
-Note ID : CF101
-</p>
+                <p>
+                    Note ID : CF101
+                </p>
 
-<button class="view-btn"
-onclick="openNote('CF101')">
-View Notes
-</button>
+                <button class="view-btn" onclick="openNote('CF101')">
+                    View Notes
+                </button>
 
-</div>
+            </div>
 
-<div class="note-card">
+            <div class="note-card">
 
-<div class="note-icon">
-📗
-</div>
+                <div class="note-icon">
+                    📗
+                </div>
 
-<h3>
-Excel Notes
-</h3>
+                <h3>
+                    Excel Notes
+                </h3>
 
-<p>
-Note ID : EX202
-</p>
+                <p>
+                    Note ID : EX202
+                </p>
 
-<button class="view-btn"
-onclick="openNote('EX202')">
-View Notes
-</button>
+                <button class="view-btn" onclick="openNote('EX202')">
+                    View Notes
+                </button>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-</section>
+    </section>
 
-<!-- LOCATION -->
+    <!-- LOCATION -->
 
-<section class="location-section">
+    <section class="location-section">
 
-<h2 class="title">
-📍 Find Us
-</h2>
 
-<div class="location-box">
 
-<p>
-🏢 ECE Computer Center
-</p>
+        <div class="location-box">
 
-<p>
-📍 Kalpani Bazar,
-Near Sankardeva Namghar,
-Baksa, Assam - 781315
-</p>
 
-<p>
-📞 +91 8453670810
-📞 +91 6000181843
-</p>
+        </div>
 
-</div>
+        <a href="https://maps.google.com" class="btn">
 
-<a href="https://maps.google.com"
-class="btn">
-Open Map
-</a>
+        </a>
 
-</section>
+    </section>
 
-<!-- CONTACT -->
+    <!-- CONTACT -->
 
-<section class="contact" id="contact">
+    <section class="contact" id="contact">
 
-<h2>
-Contact Us 📞
-</h2>
+        <h2>
 
-<p>
-📱 <a href="tel:+916000181843">
-+91 6000181843
-</a>
-</p>
+            Find Us
 
-<p>
-📱 <a href="tel:+918453670810">
-+91 8453670810
-</a>
-</p>
+        </h2>
+        <p>
+            ECE Computer Center
+        </p>
 
-</section>
+        <p>
 
-<!-- FOOTER -->
+            Kalpani Bazar, Near Sankardeva Namghar, Baksa, Assam - 781315
+        </p>
 
-<footer>
+        
 
-© 2026 ECE Kalpani Bazar | Kalpani Bazar
+        <div class="p" style="text-align: center;margin-left: 50px;">
+            <p>
+            <div class="c">
+                <a href="tel:+916000181843"> 📞 +91 6000181843 </a>
+            </div>
+            </p>
+            <p>
+            <div class="c">
+                <a href="tel:+918453670810"> 📞 +91 8453670810</a>
+            </div> 
+            </p>
+        </div>
+       
+    </section>
 
-<br><br>
+    <!-- FOOTER -->
 
-💻 Developed by GB
+    <footer>
 
-</footer>
+        © 2026 ECE Kalpani Bazar | Kalpani Bazar <br>        💻 Developed by GB
 
-<!-- WHATSAPP -->
+    </footer>
 
-<a href="https://wa.me/918453670810"
-class="whatsapp"
-target="_blank">
-💬
-</a><!-- REGISTER POPUP -->
+    <!-- WHATSAPP -->
 
-<div class="login-box" id="registerBox">
+    <a href="https://wa.me/918453670810" class="whatsapp" target="_blank">
+        💬
+    </a><!-- REGISTER POPUP -->
 
-<div class="register-card">
+    <div class="login-box" id="registerBox">
 
-<span class="close-btn"
-onclick="closeRegister()">
-×
-</span>
+        <div class="register-card">
 
-<h2>Register</h2>
+            <span class="close-btn" onclick="closeRegister()">
+                ×
+            </span>
 
-<input
-type="text"
-id="studentName"
-placeholder="👤 Enter Name">
+            <h2>Register</h2>
 
-<input
-type="email"
-id="studentEmail"
-placeholder="📧 Enter Email">
+            <input type="text" id="studentName" placeholder="👤 Enter Name">
 
-<input
-type="password"
-id="studentPassword"
-placeholder="🔒 Create Password">
+            <input type="email" id="studentEmail" placeholder="📧 Enter Email">
 
-<button onclick="sendOTP()">
-Send OTP
-</button>
+            <input type="password" id="studentPassword" placeholder="🔒 Create Password">
 
-<input
-type="text"
-id="otpInput"
-placeholder="Enter OTP">
+            <button onclick="sendOTP()">
+                Send OTP
+            </button>
 
-<button
-onclick="verifyOTP()"
-style="background:#22c55e;">
-Verify OTP
-</button>
+            <input type="text" id="otpInput" placeholder="Enter OTP">
 
-<button onclick="createAccount()">
-Create Account
-</button>
+            <button onclick="verifyOTP()" style="background:#22c55e;">
+                Verify OTP
+            </button>
 
-<p style="
+            <button onclick="createAccount()">
+                Create Account
+            </button>
+
+            <p style="
 margin-top:15px;
 text-align:center;">
 
-Already have an account?
+                Already have an account?
 
-<a href="#"
-onclick="
+                <a href="#" onclick="
 closeRegister();
-openLogin();"
-style="
+openLogin();" style="
 color:#2563eb;
 font-weight:700;
 text-decoration:none;">
-Login
-</a>
+                    Login
+                </a>
 
-</p>
+            </p>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
-<!-- NOTE POPUP -->
+    <!-- NOTE POPUP -->
 
-<div class="login-box"
-id="noteBox">
+    <div class="login-box" id="noteBox">
 
-<div class="login-content">
+        <div class="login-content">
 
-<span class="close-btn"
-onclick="closeNoteBox()">
-×
-</span>
+            <span class="close-btn" onclick="closeNoteBox()">
+                ×
+            </span>
 
-<h2>
-Enter Note ID 📚
-</h2>
+            <h2>
+                Enter Note ID 📚
+            </h2>
 
-<input
-type="text"
-id="noteInput"
-placeholder="Enter Note ID">
+            <input type="text" id="noteInput" placeholder="Enter Note ID">
 
-<button onclick="checkNote()">
-Open Note
-</button>
+            <button onclick="checkNote()">
+                Open Note
+            </button>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
-<!-- LOGIN POPUP -->
+    <!-- LOGIN POPUP -->
 
-<div class="login-box"
-id="loginBox">
+    <div class="login-box" id="loginBox">
 
-<div class="login-content">
+        <div class="login-content">
 
-<span class="close-btn"
-onclick="closeLogin()">
-×
-</span>
+            <span class="close-btn" onclick="closeLogin()">
+                ×
+            </span>
 
-<h2>
-Student Login 🔐
-</h2>
+            <h2>
+                Student Login 🔐
+            </h2>
 
-<input
-type="email"
-id="loginEmail"
-placeholder="Enter Email">
+            <input type="email" id="loginEmail" placeholder="Enter Email">
 
-<input
-type="password"
-id="loginPassword"
-placeholder="Enter Password">
+            <input type="password" id="loginPassword" placeholder="Enter Password">
 
-<button onclick="loginAccount()">
-Login
-</button>
+            <button onclick="loginAccount()">
+                Login
+            </button>
 
-<button
-onclick="googleLogin()"
-style="
+            <button onclick="googleLogin()" style="
 margin-top:10px;
 background:#ea4335;">
-Continue With Google
-</button>
+                Continue With Google
+            </button>
 
-<button
-onclick="forgotPassword()"
-style="
+            <button onclick="forgotPassword()" style="
 margin-top:10px;
 background:#f59e0b;">
-Forgot Password
-</button>
+                Forgot Password
+            </button>
 
-</div>
+        </div>
 
-</div><script>function toggleMenu(){
-document.getElementById("mobileMenu")
-.classList.toggle("show");
-}
+    </div>
+    <script>function toggleMenu() {
+            document.getElementById("mobileMenu")
+                .classList.toggle("show");
+        }
 
-function closeMenu(){
-document.getElementById("mobileMenu")
-.classList.remove("show");
-}</script>
+        function closeMenu() {
+            document.getElementById("mobileMenu")
+                .classList.remove("show");
+        }</script>
 
-<!-- EMAIL JS -->
+    <!-- EMAIL JS -->
 
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<script>
+    <script>
 
-emailjs.init("9gGKHifZbvMCwAYEG");
+        emailjs.init("9gGKHifZbvMCwAYEG");
 
-</script>
+    </script>
 
-<!-- MAIN JAVASCRIPT -->
+    <!-- MAIN JAVASCRIPT -->
 
-<script>
+    <script>
 
-/* ================= MOBILE MENU ================= */
+        /* ================= MOBILE MENU ================= */
 
-function toggleMenu(){
+        function toggleMenu() {
 
-document.getElementById("mobileMenu")
-.classList.toggle("show");
+            document.getElementById("mobileMenu")
+                .classList.toggle("show");
 
-}
+        }
 
-function closeMenu(){
+        function closeMenu() {
 
-document.getElementById("mobileMenu")
-.classList.remove("show");
+            document.getElementById("mobileMenu")
+                .classList.remove("show");
 
-}
+        }
 
-/* ================= NOTES ================= */
+        /* ================= NOTES ================= */
 
-let currentNote = "";
+        let currentNote = "";
 
-function openNote(noteId){
+        function openNote(noteId) {
 
-let user =
-localStorage.getItem("studentEmail");
+            let user =
+                localStorage.getItem("studentEmail");
 
-if(user){
+            if (user) {
 
-window.location.href =
-"/profile.html";
+                window.location.href =
+                    "/profile.html";
 
-}else{
+            } else {
 
-document.getElementById("registerBox")
-.style.display = "flex";
+                document.getElementById("registerBox")
+                    .style.display = "flex";
 
-}
+            }
 
-}
+        }
 
-/* ================= REGISTER ================= */
+        /* ================= REGISTER ================= */
 
-async function createAccount(){
+        async function createAccount() {
 
-let name =
-document.getElementById("studentName").value;
+            let name =
+                document.getElementById("studentName").value;
 
-let email =
-document.getElementById("studentEmail").value;
+            let email =
+                document.getElementById("studentEmail").value;
 
-let password =
-document.getElementById("studentPassword").value;
+            let password =
+                document.getElementById("studentPassword").value;
 
-if(
-name === "" ||
-email === "" ||
-password === ""
-){
+            if (
+                name === "" ||
+                email === "" ||
+                password === ""
+            ) {
 
-alert("Please fill all fields ❌");
+                alert("Please fill all fields ❌");
 
-return;
+                return;
 
-}
+            }
 
-if(otpVerified === false){
+            if (otpVerified === false) {
 
-alert("Please verify OTP first ❌");
+                alert("Please verify OTP first ❌");
 
-return;
+                return;
 
-}
+            }
 
-try{
+            try {
 
-const response =
-await fetch("/register",{
+                const response =
+                    await fetch("/register", {
 
-method:"POST",
+                        method: "POST",
 
-headers:{
-"Content-Type":"application/json"
-},
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
 
-body:JSON.stringify({
+                        body: JSON.stringify({
 
-name:name,
-email:email,
-password:password
+                            name: name,
+                            email: email,
+                            password: password
 
-})
+                        })
 
-});
+                    });
 
-const data =
-await response.json();
+                const data =
+                    await response.json();
 
-if(data.success){
+                if (data.success) {
 
-localStorage.setItem(
-"studentName",
-name
-);
+                    localStorage.setItem(
+                        "studentName",
+                        name
+                    );
 
-localStorage.setItem(
-"studentEmail",
-email
-);
+                    localStorage.setItem(
+                        "studentEmail",
+                        email
+                    );
 
-alert(
-"Account Created Successfully ✅"
-);
+                    alert(
+                        "Account Created Successfully ✅"
+                    );
 
-closeRegister();
+                    closeRegister();
 
-window.location.href =
-"/profile.html";
+                    window.location.href =
+                        "/profile.html";
 
-}else{
+                } else {
 
-alert(data.message);
+                    alert(data.message);
 
-}
+                }
 
-}catch(error){
+            } catch (error) {
 
-console.log(error);
+                console.log(error);
 
-alert(
-"Server Connection Error ❌"
-);
+                alert(
+                    "Server Connection Error ❌"
+                );
 
-}
+            }
 
-}
+        }
 
-/* ================= NOTES OPEN ================= */
+        /* ================= NOTES OPEN ================= */
 
-function checkNote(){
+        function checkNote() {
 
-let enteredId =
-document.getElementById("noteInput")
-.value;
+            let enteredId =
+                document.getElementById("noteInput")
+                    .value;
 
-if(enteredId === "CF101"){
+            if (enteredId === "CF101") {
 
-window.location.href =
-"notes/cf101.html";
+                window.location.href =
+                    "notes/cf101.html";
 
-}
+            }
 
-else if(enteredId === "EX202"){
+            else if (enteredId === "EX202") {
 
-window.location.href =
-"notes/ex202.html";
+                window.location.href =
+                    "notes/ex202.html";
 
-}
+            }
 
-else{
+            else {
 
-alert(
-"Invalid Note ID ❌"
-);
+                alert(
+                    "Invalid Note ID ❌"
+                );
 
-}
+            }
 
-}
+        }
 
-/* ================= POPUP CLOSE ================= */
+        /* ================= POPUP CLOSE ================= */
 
-function closeRegister(){
+        function closeRegister() {
 
-document.getElementById("registerBox")
-.style.display = "none";
+            document.getElementById("registerBox")
+                .style.display = "none";
 
-}
+        }
 
-function closeNoteBox(){
+        function closeNoteBox() {
 
-document.getElementById("noteBox")
-.style.display = "none";
+            document.getElementById("noteBox")
+                .style.display = "none";
 
-}
+        }
 
-function openLogin(){
+        function openLogin() {
 
-document.getElementById("loginBox")
-.style.display = "flex";
+            document.getElementById("loginBox")
+                .style.display = "flex";
 
-}
+        }
 
-function closeLogin(){
+        function closeLogin() {
 
-document.getElementById("loginBox")
-.style.display = "none";
+            document.getElementById("loginBox")
+                .style.display = "none";
 
-}
+        }
 
-</script>
+    </script>
 
-<!-- OTP SYSTEM -->
+    <!-- OTP SYSTEM -->
 
-<script>
+    <script>
 
-let generatedOTP = null;
+        let generatedOTP = null;
 
-let otpVerified = false;
+        let otpVerified = false;
 
-function sendOTP(){
+        function sendOTP() {
 
-otpVerified = false;
+            otpVerified = false;
 
-generatedOTP =
-Math.floor(
-100000 + Math.random() * 900000
-);
+            generatedOTP =
+                Math.floor(
+                    100000 + Math.random() * 900000
+                );
 
-let email =
-document.getElementById("studentEmail")
-.value;
+            let email =
+                document.getElementById("studentEmail")
+                    .value;
 
-if(email === ""){
+            if (email === "") {
 
-alert(
-"Enter Email First ❌"
-);
+                alert(
+                    "Enter Email First ❌"
+                );
 
-return;
+                return;
 
-}
+            }
 
-emailjs.send(
+            emailjs.send(
 
-"service_zz2tol8",
+                "service_zz2tol8",
 
-"template_jqb7mh9",
+                "template_jqb7mh9",
 
-{
-email:email,
-otp:generatedOTP
-}
+                {
+                    email: email,
+                    otp: generatedOTP
+                }
 
-)
+            )
 
-.then(()=>{
+                .then(() => {
 
-alert(
-"OTP Sent Successfully ✅"
-);
+                    alert(
+                        "OTP Sent Successfully ✅"
+                    );
 
-})
+                })
 
-.catch(()=>{
+                .catch(() => {
 
-alert(
-"OTP Send Failed ❌"
-);
+                    alert(
+                        "OTP Send Failed ❌"
+                    );
 
-});
+                });
 
-}
+        }
 
-function verifyOTP(){
+        function verifyOTP() {
 
-let enteredOTP =
-document.getElementById("otpInput")
-.value.trim();
+            let enteredOTP =
+                document.getElementById("otpInput")
+                    .value.trim();
 
-if(enteredOTP === ""){
+            if (enteredOTP === "") {
 
-alert(
-"Please enter OTP ❌"
-);
+                alert(
+                    "Please enter OTP ❌"
+                );
 
-return;
+                return;
 
-}
+            }
 
-if(generatedOTP === null){
+            if (generatedOTP === null) {
 
-alert(
-"Please send OTP first ❌"
-);
+                alert(
+                    "Please send OTP first ❌"
+                );
 
-return;
+                return;
 
-}
+            }
 
-if(
-enteredOTP === generatedOTP.toString()
-){
+            if (
+                enteredOTP === generatedOTP.toString()
+            ) {
 
-otpVerified = true;
+                otpVerified = true;
 
-alert(
-"OTP Verified Successfully ✅"
-);
+                alert(
+                    "OTP Verified Successfully ✅"
+                );
 
-}else{
+            } else {
 
-alert(
-"Wrong OTP ❌"
-);
+                alert(
+                    "Wrong OTP ❌"
+                );
 
-}
+            }
 
-}
+        }
 
-</script>
+    </script>
 
-<!-- LOGIN -->
+    <!-- LOGIN -->
 
-<script>
+    <script>
 
-async function loginAccount(){
+        async function loginAccount() {
 
-let email =
-document.getElementById("loginEmail")
-.value;
+            let email =
+                document.getElementById("loginEmail")
+                    .value;
 
-let password =
-document.getElementById("loginPassword")
-.value;
+            let password =
+                document.getElementById("loginPassword")
+                    .value;
 
-if(email === "" || password === ""){
+            if (email === "" || password === "") {
 
-alert(
-"Enter Email & Password ❌"
-);
+                alert(
+                    "Enter Email & Password ❌"
+                );
 
-return;
+                return;
 
-}
+            }
 
-try{
+            try {
 
-const response =
-await fetch("/login",{
+                const response =
+                    await fetch("/login", {
 
-method:"POST",
+                        method: "POST",
 
-headers:{
-"Content-Type":"application/json"
-},
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
 
-body:JSON.stringify({
+                        body: JSON.stringify({
 
-email:email,
-password:password
+                            email: email,
+                            password: password
 
-})
+                        })
 
-});
+                    });
 
-const data =
-await response.json();
+                const data =
+                    await response.json();
 
-if(data.success){
+                if (data.success) {
 
-localStorage.setItem(
-"studentName",
-data.name
-);
+                    localStorage.setItem(
+                        "studentName",
+                        data.name
+                    );
 
-localStorage.setItem(
-"studentEmail",
-email
-);
+                    localStorage.setItem(
+                        "studentEmail",
+                        email
+                    );
 
-alert(
-"Login Successful ✅"
-);
+                    alert(
+                        "Login Successful ✅"
+                    );
 
-closeLogin();
+                    closeLogin();
 
-window.location.href =
-"/profile.html";
+                    window.location.href =
+                        "/profile.html";
 
-}else{
+                } else {
 
-alert(
-"Invalid Email or Password ❌"
-);
+                    alert(
+                        "Invalid Email or Password ❌"
+                    );
 
-}
+                }
 
-}catch(error){
+            } catch (error) {
 
-alert(
-"Server Error ❌"
-);
+                alert(
+                    "Server Error ❌"
+                );
 
-}
+            }
 
-}
+        }
 
-</script>
+    </script>
 
-<!-- FORGOT PASSWORD -->
+    <!-- FORGOT PASSWORD -->
 
-<script>
+    <script>
 
-async function forgotPassword(){
+        async function forgotPassword() {
 
-let email =
-prompt(
-"Enter Your Registered Email"
-);
+            let email =
+                prompt(
+                    "Enter Your Registered Email"
+                );
 
-if(!email){
+            if (!email) {
 
-return;
+                return;
 
-}
+            }
 
-try{
+            try {
 
-const response =
-await fetch("/forgot-password",{
+                const response =
+                    await fetch("/forgot-password", {
 
-method:"POST",
+                        method: "POST",
 
-headers:{
-"Content-Type":"application/json"
-},
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
 
-body:JSON.stringify({
+                        body: JSON.stringify({
 
-email:email
+                            email: email
 
-})
+                        })
 
-});
+                    });
 
-const data =
-await response.json();
+                const data =
+                    await response.json();
 
-alert(data.message);
+                alert(data.message);
 
-}catch(error){
+            } catch (error) {
 
-alert(
-"Server Error ❌"
-);
+                alert(
+                    "Server Error ❌"
+                );
 
-}
+            }
 
-}
+        }
 
-</script>
+    </script>
 
-<!-- AUTO LOGIN CHECK -->
+    <!-- AUTO LOGIN CHECK -->
 
-<script>
+    <script>
 
-window.onload = function(){
+        window.onload = function () {
 
-let user =
-localStorage.getItem(
-"studentEmail"
-);
+            let user =
+                localStorage.getItem(
+                    "studentEmail"
+                );
 
-if(!user){
+            if (!user) {
 
-document.getElementById("registerBox")
-.style.display = "flex";
+                document.getElementById("registerBox")
+                    .style.display = "flex";
 
-}
+            }
 
-}
+        }
 
-</script>
+    </script>
 
-<!-- FIREBASE -->
+    <!-- FIREBASE -->
 
-<script type="module">
+    <script type="module">
 
-import {
-initializeApp
-} from
-"https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import {
+            initializeApp
+        } from
+            "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 
-import {
-getAuth,
-GoogleAuthProvider,
-signInWithPopup
-} from
-"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+        import {
+            getAuth,
+            GoogleAuthProvider,
+            signInWithPopup
+        } from
+            "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-const firebaseConfig = {
+        const firebaseConfig = {
 
-apiKey:
-"AIzaSyB4t_FAoBIu6pL1JiaI25NwcQ1ojFpf0-U",
+            apiKey:
+                "AIzaSyB4t_FAoBIu6pL1JiaI25NwcQ1ojFpf0-U",
 
-authDomain:
-"ecekalpani-website.firebaseapp.com",
+            authDomain:
+                "ecekalpani-website.firebaseapp.com",
 
-projectId:
-"ecekalpani-website",
+            projectId:
+                "ecekalpani-website",
 
-storageBucket:
-"ecekalpani-website.firebasestorage.app",
+            storageBucket:
+                "ecekalpani-website.firebasestorage.app",
 
-messagingSenderId:
-"926367870038",
+            messagingSenderId:
+                "926367870038",
 
-appId:
-"1:926367870038:web:918d4f0fbf2b2fbd915ff7"
+            appId:
+                "1:926367870038:web:918d4f0fbf2b2fbd915ff7"
 
-};
+        };
 
-const app =
-initializeApp(firebaseConfig);
+        const app =
+            initializeApp(firebaseConfig);
 
-const auth =
-getAuth(app);
+        const auth =
+            getAuth(app);
 
-const provider =
-new GoogleAuthProvider();
+        const provider =
+            new GoogleAuthProvider();
 
-window.googleLogin =
-function(){
+        window.googleLogin =
+            function () {
 
-signInWithPopup(auth, provider)
+                signInWithPopup(auth, provider)
 
-.then((result)=>{
+                    .then((result) => {
 
-const user =
-result.user;
+                        const user =
+                            result.user;
 
-localStorage.setItem(
-"studentName",
-user.displayName
-);
+                        localStorage.setItem(
+                            "studentName",
+                            user.displayName
+                        );
 
-localStorage.setItem(
-"studentEmail",
-user.email
-);
+                        localStorage.setItem(
+                            "studentEmail",
+                            user.email
+                        );
 
-alert(
-"Google Login Successful ✅"
-);
+                        alert(
+                            "Google Login Successful ✅"
+                        );
 
-window.location.href =
-"/profile.html";
+                        window.location.href =
+                            "/profile.html";
 
-})
+                    })
 
-.catch((error)=>{
+                    .catch((error) => {
 
-alert(
-error.message
-);
+                        alert(
+                            error.message
+                        );
 
-});
+                    });
 
-}
+            }
 
-</script>
+    </script>
 
 </body>
+
 </html>
