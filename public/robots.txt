@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ece-kalpanibazar.onrender.com/sitemap.xml
